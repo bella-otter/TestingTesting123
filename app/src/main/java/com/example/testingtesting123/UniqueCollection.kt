@@ -24,10 +24,10 @@ class UniqueCollection {
 
     /** Clear all items from hte collection */
     fun clear () {
-
+        collection.clear()//calling java.util.arraylist one, not self
     }
 
-    /** Return the side of the collection */
+    /** Return the size of the collection */
     fun size() = collection.size
 
 
