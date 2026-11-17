@@ -8,7 +8,7 @@ class UniqueCollectionTest {
     lateinit var collection: UniqueCollection
 
     @Before
-    fun setUp() {
+    fun setUp() {//note: executed before every test
         collection = UniqueCollection()
     }
 
@@ -27,7 +27,7 @@ class UniqueCollectionTest {
     fun addUniqueItem() {
         collection.addItem(Item("same"))
         val size1 = collection.size()
-        collection.addItem(Item("sAme"))
+        collection.addItem(Item("sAme"))//uniqueness not case sensitive
         assert(collection.size()==size1)
     }
 
