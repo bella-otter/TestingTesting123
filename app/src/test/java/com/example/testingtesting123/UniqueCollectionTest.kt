@@ -27,7 +27,7 @@ class UniqueCollectionTest {
     fun addUniqueItem() {
         collection.addItem(Item("same"))
         val size1 = collection.size()
-        collection.addItem(Item("same"))
+        collection.addItem(Item("sAme"))
         assert(collection.size()==size1)
     }
 
